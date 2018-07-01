@@ -14,7 +14,7 @@
 	{% for logo in site.contact.logos %}
 			<h1>{{logo.title}}</h1>
 			<a href="{{logo.url}}">
-				<img class="institutelogo" src="{{ logo.path | absolute_url }}" >
+				<img class="institutelogo" src="{{ logo.path | relative_url }}" >
 		  </a>
 	{% endfor %}
 </aside>
